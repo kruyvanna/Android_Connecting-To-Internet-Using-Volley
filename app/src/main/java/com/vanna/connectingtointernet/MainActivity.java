@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void makeRequest() {
+
+        TextView textView = (TextView) findViewById(R.id.textView);
+        textView.setText("Requesting");
+
         Context context = getApplicationContext();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
 
